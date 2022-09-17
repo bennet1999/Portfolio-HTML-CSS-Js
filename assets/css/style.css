@@ -175,6 +175,10 @@ article {
   z-index: 1;
 }
 
+#potraitImg{
+  border-radius: 15px;
+}
+
 .separator {
   width: 100%;
   height: 1px;
