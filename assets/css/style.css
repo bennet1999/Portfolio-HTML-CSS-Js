@@ -1082,7 +1082,7 @@ main {
   transition: var(--transition-1);
 }
 
-.blog-post-item > a:hover .blog-banner-box img { transform: scale(1.1); }
+.blog-posts-list img:hover { transform: scale(1.035); }
 
 .blog-content { padding: 15px; }
 
@@ -1900,7 +1900,3 @@ textarea.form-input::-webkit-resizer { display: none; }
   font-weight: 300;
   color: var(--light-gray);
 }
-
-.legal  h2 { font-size: var(--fs-1);
-  
- }
