@@ -135,7 +135,7 @@ for (let i = 0; i < formInputs.length; i++) {
   });
 }
 
-
+//form submition, sending E-mail and resetting the forms
 document.getElementById("submitButton").addEventListener("click", (e) =>{
   e.preventDefault();
 
