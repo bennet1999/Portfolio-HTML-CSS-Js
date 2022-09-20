@@ -154,6 +154,7 @@ document.getElementById("submitButton").addEventListener("click", (e) =>{
     Body: body + "\nPlease contact me at " + replyemail
   }).then(
     //message => alert(message),
+    message => console.log(message),
     document.getElementById("fullNameId").value="",
     document.getElementById("emailId").value="",
     document.getElementById("messageId").value="",
