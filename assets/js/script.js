@@ -144,6 +144,22 @@ document.getElementById("submitButton").addEventListener("click", (e) =>{
   const body = document.getElementById("messageId").value;
   //console.log(fullname, replyemail, body);
 
+  Email.send({
+    Host: "smtp.elasticemail.com",
+    Username: "bennybennet1999@gmail.com",
+    Password: "3E24A3056A33803F14ED5B1119F534F13668",
+    To: 'bennybennet01@gmail.com',
+    From: "bennybennet1999@gmail.com",
+    Subject: fullname,
+    Body: body + "\nPlease contact me at " + replyemail
+  }).then(
+    //message => alert(message),
+    message => console.log(message),
+    document.getElementById("fullNameId").value="",
+    document.getElementById("emailId").value="",
+    document.getElementById("messageId").value="",
+    formBtn.setAttribute("disabled", "")
+  );
 
 
 });
